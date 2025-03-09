@@ -1,0 +1,45 @@
+﻿@* 　タスク一覧画面のフロントエンド側の実装 *@
+@page
+@model WebApplicationTest.Pages.TaskTables.IndexModel
+@{
+	ViewData["Title"] = "タスク一覧画面";
+}
+
+<a asp-page="Create">タスク登録</a>
+
+<table>
+	<thead>
+		<tr>
+			<th>タスク名</th>
+			<th>開始日</th>
+			<th>終了日</th>
+			<th>内容</th>
+			<th>状態</th>
+			<th>予定工数</th>
+			<th>実績工数</th>
+			<th>予実の乖離値</th>
+			<th>備考</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var task in Model.Tasks)
+		{
+			<tr>
+				<td>@task.Name</td>
+				<td>@task.StartDate</td>
+				<td>@task.EndDate</td>
+				<td>@task.Contents</td>
+				<td>@task.Status</td>
+				<td>@task.PlanManHour</td>
+				<td>@task.ResultManHour</td>
+				<td>@task.Deviation</td>
+				<td>@task.Note</td>
+				<td>
+					<a asp-page="./Edit" asp-route-id="@task.Id">編集</a> 
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+

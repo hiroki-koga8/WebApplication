@@ -1,0 +1,66 @@
+﻿@* 　タスク登録画面のフロントエンド側の実装 *@
+@page
+@model WebApplicationTest.Pages.TaskTables.CreateModel
+@{
+	ViewData["Title"] = "タスク登録画面";
+}
+
+<div>
+	<a asp-page="Index">一覧へ戻る</a>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<form method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="Task.Name" class="control-label"></label>
+				<input asp-for="Task.Name" class="form-control" />
+				<span asp-validation-for="Task.Name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.StartDate" class="control-label"></label>
+				<input asp-for="Task.StartDate" class="form-control" />
+				<span asp-validation-for="Task.StartDate" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.EndDate" class="control-label"></label>
+				<input asp-for="Task.EndDate" class="form-control" />
+				<span asp-validation-for="Task.EndDate" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.Contents" class="control-label"></label>
+				<input asp-for="Task.Contents" class="form-control" />
+				<span asp-validation-for="Task.Contents" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.Status" class="control-label"></label>
+				<select asp-for="Task.Status" class="form-control" asp-items=@Model.StatusLists></select>
+				<span asp-validation-for="Task.Status" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.PlanManHour" class="control-label"></label>
+				<input asp-for="Task.PlanManHour" class="form-control"/>
+				<span asp-validation-for="Task.PlanManHour" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.ResultManHour" class="control-label"></label>
+				<input asp-for="Task.ResultManHour" class="form-control" />
+				<span asp-validation-for="Task.ResultManHour" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.Deviation" class="control-label"></label>
+				<input asp-for="Task.Deviation" class="form-control" />
+				<span asp-validation-for="Task.Deviation" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Task.Note" class="control-label"></label>
+				<input asp-for="Task.Note" class="form-control" />
+				<span asp-validation-for="Task.Note" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="登録" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
