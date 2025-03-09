@@ -21,7 +21,7 @@ Razor Pagesを用いてWEBアプリケーションを学習するためのリポ
 * cssでスタイルを整える
 * 各項目ごとの絞り込み（開始日、終了日が〇月分だけ表示、状態が「完了」のものだけ表示など）
 * 表示してある一覧をExcelやcsvで出力する機能
-
+----
 ## タスク登録画面
 ![image](https://github.com/user-attachments/assets/b7f6b507-1da9-4adf-bffa-4b378fd97ace)
 
@@ -60,8 +60,41 @@ Razor Pagesを用いてWEBアプリケーションを学習するためのリポ
   * 入力必須の項目が入力されている場合
     * 入力した内容がDBに登録される
     * タスク一覧画面へ遷移する
+   
+### TODO(今後実施したいこと)
+* cssでスタイルを整える
+* 予実の乖離値はアプリ側で計算するようにしたい
+* 入力必須の項目を入力していない場合のエラーメッセージをデフォルトから変更
+---- 
+## タスク編集画面
+![image](https://github.com/user-attachments/assets/6f7021fb-1562-4112-b79a-3f7c5cc6c40d)
 
+* DBに登録されているタスクを編集することができます。
+### 表示項目
+* タスク登録画面とほぼ同じ
+* フィールドなどは対象のタスクのデータが表示される
 
-参考）
-https://qiita.com/shironana/items/18d38933324a3e4276ee
-https://qiita.com/te-k/items/0fb0adadf00e264f4c0b
+### 画面操作時の挙動
+* 「一覧へ戻る」リンクをクリック
+  * タスク一覧画面へ遷移する
+* 削除ボタンをクリック
+  * タスクが削除される
+  * タスク一覧画面へ遷移する
+* 保存ボタンをクリック
+  * 入力必須の項目を入力していない場合
+    * 画面遷移せずエラーが表示
+    * ![image](https://github.com/user-attachments/assets/5de44884-ae50-4bf3-b717-b9e0cfddf1bf)
+  * 入力必須の項目が入力されている場合
+    * 入力した内容がDBに保存される
+    * タスク一覧画面へ遷移する
+   
+### TODO(今後実施したいこと)
+* cssでスタイルを整える
+* 削除時に確認のダイアログを表示できるようにしたい
+* 予実の乖離値はアプリ側で計算するようにしたい
+* 入力必須の項目を入力していない場合のエラーメッセージをデフォルトから変更
+
+#### 参考）
+* https://learn.microsoft.com/ja-jp/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-9.0&tabs=visual-studio
+* https://qiita.com/shironana/items/18d38933324a3e4276ee
+* https://qiita.com/te-k/items/0fb0adadf00e264f4c0b
