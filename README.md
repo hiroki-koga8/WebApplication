@@ -94,6 +94,10 @@ Razor Pagesを用いてWEBアプリケーションを学習するためのリポ
 * 予実の乖離値はアプリ側で計算するようにしたい
 * 入力必須の項目を入力していない場合のエラーメッセージをデフォルトから変更
 
+### 動かし方
+1.`bin/Debug/net8.0/WebApplicationTest.exe` を起動
+2.コンソールに表示されているlocalhostのURLを開く
+
 #### 参考）
 * https://learn.microsoft.com/ja-jp/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-9.0&tabs=visual-studio
 * https://qiita.com/shironana/items/18d38933324a3e4276ee
