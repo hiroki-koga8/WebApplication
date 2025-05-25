@@ -4,7 +4,6 @@ Razor Pagesを用いてWEBアプリケーションを学習するためのリポ
 
 # 説明
 ## タスク一覧画面
-![image](https://github.com/user-attachments/assets/c5ae5c38-fec5-450e-a00e-7ffe328135d6)
 
 * DBに登録されているタスク一覧を表示することができます。
 ### 表示項目
@@ -23,8 +22,6 @@ Razor Pagesを用いてWEBアプリケーションを学習するためのリポ
 * 表示してある一覧をExcelやcsvで出力する機能
 ----
 ## タスク登録画面
-![image](https://github.com/user-attachments/assets/b7f6b507-1da9-4adf-bffa-4b378fd97ace)
-
 * DBにタスクを登録することができます。
 ### 表示項目
 * 名称
@@ -56,7 +53,6 @@ Razor Pagesを用いてWEBアプリケーションを学習するためのリポ
 * 登録ボタンをクリック
   * 入力必須の項目を入力していない場合
     * 画面遷移せずエラーが表示
-    * ![image](https://github.com/user-attachments/assets/5de44884-ae50-4bf3-b717-b9e0cfddf1bf)
   * 入力必須の項目が入力されている場合
     * 入力した内容がDBに登録される
     * タスク一覧画面へ遷移する
@@ -67,7 +63,6 @@ Razor Pagesを用いてWEBアプリケーションを学習するためのリポ
 * 入力必須の項目を入力していない場合のエラーメッセージをデフォルトから変更
 ---- 
 ## タスク編集画面
-![image](https://github.com/user-attachments/assets/6f7021fb-1562-4112-b79a-3f7c5cc6c40d)
 
 * DBに登録されているタスクを編集することができます。
 ### 表示項目
